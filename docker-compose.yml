@@ -2,6 +2,7 @@ version: '3'
 services:
   weblogic:
     image: quay.io/markxnelson/weblogic:oow
+    entrypoint: /u01/oracle/user_projects/domains/base_domain/startWebLogic.sh
     ports:
     - "7001:7001"
     links:
