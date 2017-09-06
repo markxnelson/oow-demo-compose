@@ -1,0 +1,10 @@
+version: '3'
+services:
+  weblogic:
+    image: quay.io/markxnelson/weblogic:oow
+    ports:
+    - "7001:7001"
+    links:
+    - database
+  database:
+    image: quay.io/markxnelson/database:oow
